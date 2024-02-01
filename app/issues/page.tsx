@@ -4,7 +4,7 @@ import Link from "next/link";
 import { prisma } from "@/prisma/client";
 
 const Issuespage = async () => {
-  const issues = await prisma.issue.findMany();
+  const issues = await prisma.issue.findMany({});
   return (
     <div>
       <div className="mb-5">
