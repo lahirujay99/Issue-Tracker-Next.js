@@ -24,7 +24,6 @@ export async function PATCH(
       where: { id: assignedToUserId },
     });
 
-    console.log(findU);
     if (!findU)
       return NextResponse.json({ error: "Invalid user" }, { status: 400 });
   }
